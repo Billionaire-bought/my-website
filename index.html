@@ -2,20 +2,113 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My First Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google</title>
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
     }
-    h1 {
-      color: #4CAF50;
+
+    .header {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 14px;
+    }
+
+    .header a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #555;
+    }
+
+    .logo {
+      font-size: 80px;
+      font-weight: bold;
+      color: #4285f4;
+      margin-bottom: 20px;
+      font-family: 'Product Sans', sans-serif;
+    }
+
+    .logo span:nth-child(2) { color: #ea4335; }
+    .logo span:nth-child(3) { color: #fbbc05; }
+    .logo span:nth-child(4) { color: #4285f4; }
+    .logo span:nth-child(5) { color: #34a853; }
+    .logo span:nth-child(6) { color: #ea4335; }
+
+    .search-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    input[type="text"] {
+      width: 500px;
+      padding: 14px 20px;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      font-size: 16px;
+      outline: none;
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons input {
+      margin: 5px;
+      padding: 10px 20px;
+      background-color: #f8f9fa;
+      border: 1px solid #f8f9fa;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+
+    .buttons input:hover {
+      border: 1px solid #dadce0;
+    }
+
+    .footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 13px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>This is my very first website on GitHub Pages.</p>
+  <div class="header">
+    <a href="#">Gmail</a>
+    <a href="#">Images</a>
+  </div>
+
+  <div class="logo">
+    <span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span>
+  </div>
+
+  <div class="search-box">
+    <input type="text" placeholder="Search Google or type a URL">
+    <div class="buttons">
+      <input type="button" value="Google Search">
+      <input type="button" value="I'm Feeling Lucky">
+    </div>
+  </div>
+
+  <div class="footer">
+    Google clone using HTML and CSS only ✨
+  </div>
 </body>
 </html>
